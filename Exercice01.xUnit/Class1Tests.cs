@@ -1,5 +1,4 @@
 ﻿using Exercice01.Bibliotheque;
-using Xunit;
 
 namespace Exercice01.Tests
 {
