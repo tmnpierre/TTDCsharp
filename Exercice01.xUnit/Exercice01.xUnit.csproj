@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Exercice01.Bibliotheque\Exercice01.Bibliotheque.csproj" />
+  </ItemGroup>
+
 </Project>
