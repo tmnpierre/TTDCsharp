@@ -1,6 +1,6 @@
 namespace Demo01.Tests
 {
-    [TestClass]
+    [TestClass] //DataNotation
     public class UnitTest1
     {
         [TestMethod]
