@@ -13,14 +13,26 @@ namespace Demo01.Tests
         //    _calcul = new();
         //}
 
-        [ClassInitialize]
-        public void OneTimeSetUp()
+        // [ClassInitialize]
+        //public void OneTimeSetUp()
+        //{
+        //    _calcul = new Calcul();
+        //}
+
+        //[ClassCleanup]
+        //public void OneTimeTearDown()
+        //{
+        //    _calcul = null;
+        //}
+
+        [TestInitialize]
+        public void SetUp()
         {
             _calcul = new Calcul();
         }
 
-        [ClassCleanup]
-        public void OneTimeTearDown()
+        [TestCleanup]
+        public void CleanUp()
         {
             _calcul = null;
         }
