@@ -7,15 +7,19 @@ namespace Demo01.TestsXUnit
 
         private Calcul? _calcul;
 
+        // SetUp
         public CalculTests()
         {
             _calcul = new Calcul();
         }
 
+        // TearDown
         public void Dispose()
         {
             throw new NotImplementedException();
         }
+
+        // IClassFixture à utiliser pour les OneTime...
 
         [Fact]
         public void WhenAddition_10_30_Then_40()
