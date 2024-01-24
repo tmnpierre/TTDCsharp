@@ -2,6 +2,9 @@
 {
     public class Calcul //Ctrl + r + r = renommer la classe et le fichier
     {
-
+        public double Addition(double x, double y)
+        {
+            return x + y;
+        }
     }
 }
