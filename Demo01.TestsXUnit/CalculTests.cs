@@ -4,6 +4,14 @@ namespace Demo01.TestsXUnit
 {
     public class CalculTests //Tjrs en public
     {
+
+        private Calcul? _calcul;
+
+        public CalculTests()
+        {
+            _calcul = new Calcul();
+        }
+
         [Fact]
         public void WhenAddition_10_30_Then_40()
         {
