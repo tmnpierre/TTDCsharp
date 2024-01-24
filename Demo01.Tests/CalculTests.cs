@@ -17,5 +17,24 @@ namespace Demo01.Tests
             // Assert = Verification dans le cadre des test
             Assert.AreEqual(40, result);
         }
+
+        [TestMethod]
+        public void WhenDivision_30_10_Then_3()
+        {
+            var calcul = new Calcul();
+
+            var result = calcul.Division(30, 10);
+
+            Assert.AreEqual(3, result); 
+        }
+
+        [TestMethod]
+        public void WhenDivision_By_0_Throw_DivideByZeroException()
+        {
+            var calcul = new Calcul();
+
+            // Act & Assert
+            Assert.ThrowsException<DivideByZeroException>(() => calcul.Division(10, 0));
+        }
     }
 }

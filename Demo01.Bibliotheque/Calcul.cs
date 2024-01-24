@@ -6,5 +6,17 @@
         {
             return x + y;
         }
+
+        public double Division(double x, double y)
+        {
+            if (y != 0)
+            {
+                return x / y;
+            }
+            else
+            {
+                throw new DivideByZeroException();
+            }
+        }
     }
 }
