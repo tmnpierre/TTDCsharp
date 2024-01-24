@@ -8,13 +8,13 @@ namespace Exercice01.Tests
     {
         private GradingCalculator _gradingCalculator;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void OneTimeSetUp()
         {
             _gradingCalculator = new GradingCalculator();
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void OneTimeTearDown()
         {
             _gradingCalculator = null;
