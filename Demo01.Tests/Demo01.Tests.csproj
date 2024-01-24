@@ -16,6 +16,12 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 
+  <!--<ItemGroup>
+    <Reference Include="Demo01.Bibliotheque">
+      <HintPath>..\Demo01.Bibliotheque\bin\Debug\net6.0\Demo01.Bibliotheque.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
+
   <ItemGroup>
     <ProjectReference Include="..\Demo01.Bibliotheque\Demo01.Bibliotheque.csproj" />
   </ItemGroup>
