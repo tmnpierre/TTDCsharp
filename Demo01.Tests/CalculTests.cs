@@ -13,6 +13,18 @@ namespace Demo01.Tests
         //    _calcul = new();
         //}
 
+        [ClassInitialize]
+        public void OneTimeSetUp()
+        {
+            _calcul = new Calcul();
+        }
+
+        [ClassCleanup]
+        public void OneTimeTearDown()
+        {
+            _calcul = null;
+        }
+
         [TestMethod]
         public void WhenAddition_10_30_Then_40()
         {
