@@ -15,7 +15,8 @@ namespace Demo01.TestsNUnit
             var result = calcul.Addition(10, 30);
 
             // Assert = Verification dans le cadre des test
-            Assert.AreEqual(40, result);
+            //Assert.AreEqual(40, result);
+            Assert.That(result, Is.EqualTo(40));
         }
 
         [Test]
@@ -25,7 +26,8 @@ namespace Demo01.TestsNUnit
 
             var result = calcul.Division(30, 10);
 
-            Assert.AreEqual(3, result);
+            //Assert.AreEqual(3, result);
+            Assert.That(result, Is.EqualTo(3));    
         }
 
         [Test]
