@@ -2,7 +2,7 @@
 
 namespace Demo01.TestsXUnit
 {
-    public class CalculTests //Tjrs en public
+    public class CalculTests : IDisposable //Tjrs en public
     {
 
         private Calcul? _calcul;
@@ -10,6 +10,11 @@ namespace Demo01.TestsXUnit
         public CalculTests()
         {
             _calcul = new Calcul();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         [Fact]
