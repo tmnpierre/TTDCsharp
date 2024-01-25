@@ -17,7 +17,19 @@ namespace Demo02TDD.Tests
         {
             LeapTester tester = new LeapTester();
 
-            bool result = tester.IsLeap(year); 
+            bool result = tester.IsLeap(year);
+
+            Assert.IsTrue(result);
+        }
+
+        [DataTestMethod]
+        [DataRow(12)]
+        [DataRow(404)]
+        public void TestLeap_4_Not_100_ShouldBe_True(int year)
+        {
+            LeapTester tester = new LeapTester();
+
+            bool result = tester.IsLeap(year);
 
             Assert.IsTrue(result);
         }
