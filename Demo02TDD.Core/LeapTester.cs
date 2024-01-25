@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Demo02TDD.Core
 {
-    internal class LeapTester
+    public class LeapTester
     {
+        public bool IsLeap(int year)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
