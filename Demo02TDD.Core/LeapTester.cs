@@ -10,7 +10,9 @@ namespace Demo02TDD.Core
     {
         public bool IsLeap(int year)
         {
-            throw new NotImplementedException();
+            if (year % 400 == 0) 
+                return true;
+            return false;
         }
     }
 }
