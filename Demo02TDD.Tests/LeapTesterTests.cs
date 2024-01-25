@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo02TDD.Tests
 {
-    internal class LeapTesterTests
+    public class LeapTesterTests
     {
     }
 }
