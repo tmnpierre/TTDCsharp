@@ -36,7 +36,7 @@ namespace Demo02TDD.Tests
 
         [DataTestMethod]
         [DataRow(8000)]
-        [DataRow(1200)]
+        [DataRow(12000)]
         public void TestLeap_4000_ShouldBe_False(int year)
         {
             LeapTester tester = new LeapTester();
