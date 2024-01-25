@@ -33,5 +33,17 @@ namespace Demo02TDD.Tests
 
             Assert.IsTrue(result);
         }
+
+        [DataTestMethod]
+        [DataRow(8000)]
+        [DataRow(1200)]
+        public void TestLeap_4000_ShouldBe_False(int year)
+        {
+            LeapTester tester = new LeapTester();
+
+            bool result = tester.IsLeap(year);
+
+            Assert.IsFalse(result);
+        }
     }
 }
